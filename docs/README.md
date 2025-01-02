@@ -1,0 +1,1 @@
+Manual for the Gaggiuino project (Gen3 embedded and web UI).

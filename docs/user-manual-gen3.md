@@ -88,9 +88,6 @@ The recorded shot graphs are shown in a list. The shots are shown with a serial 
 
 ### Shot graph 
 
-- **Delete shot graph:** Tap the icon to delete the currently viewed shot graph.
-- **Home:** Return to the home screen.
-
 <!-- tabs:start -->
 <!-- tab:Embedded UI -->
 <img alt="Shot graph embedded" src="manual-gen3/mbed/001_003_shot_review.png">
@@ -103,6 +100,9 @@ The recorded shot graphs are shown in a list. The shots are shown with a serial 
 - **Download shot graph:** Download the shot graph data (.json).
 - **Upload to sprofiler.io:** Upload your shot to [SproFiler](https://sprofiler.io). For instructions on how to register and use SproFiler, join the [Gaggiuino Discord](https://discord.com/channels/890339612441063494/1289578499581149204).
 <!-- tabs:end -->
+
+- **Delete shot graph:** Tap the icon to delete the currently viewed shot graph.
+- **Home:** Return to the home screen.
 
 # Settings
 
@@ -120,7 +120,11 @@ The recorded shot graphs are shown in a list. The shots are shown with a serial 
 - **DreamSteam:** When enabled, fresh water is pumped into the boiler during steaming (Not recommended for machines with bigger boilers, like the Rancilio Silvia).
 - **Temperature Offset [°C]:** If you have a device (e.g. Scathe) that can measure the temperature at the group head/portafilter accurately, you can adjust this value for more accurate brew temperature.
 - **Brew Delta:** The boiler will increase temperature based on flow rate and be allowed to go over 100 °C during the shot, to more quickly transfer heat to the incoming cool water.
-- **Advanced:** Only change these values if you have a non standard machine.
+- **Advanced:** 
+    > [!NOTE] Only change these values if you have a non Gaggia machine.
+    - *HPWR:* Relay max pulse width (**H**igh **P**eak **W**idth **R**esolution).
+    - *Main Divider:* Main cycle divider (aka non brew heating behavior), used in conjunction with HPWR.
+    - *Brew Diviver:* Brew cycle divider.
 
 
 ## System
@@ -130,12 +134,14 @@ The recorded shot graphs are shown in a list. The shots are shown with a serial 
 
 <!-- tab:Web UI -->
 <img alt="Settings web" src="manual-gen3/web/003_002_settings_system.png">
+
+- **(Experimental) brewiu.io/sprofiler.io API key:** Reqiured to upload your shot to [SproFiler](https://sprofiler.io). For instructions on how to register and use SproFiler join the [Gaggiuino Discord](https://discord.com/channels/890339612441063494/1289578499581149204).
+
 <!-- tabs:end -->
 
 - **Pump Zero [ml]:** Amount of water pumped per cycle. 
 - **Timezone offset [min]:** Set an offset for your current time zone.
-- **WiFi:** Connect your Gaggiuino to a local WiFi network. If Gaggiuino is connected to the Internet, it will retrieve the current date and time. If Gaggiuino is not connected to a network, it acts as a WiFi access point named: TODO
-- **(Experimental) brewiu.io/sprofiler.io API key:** Reqiured to upload your shot to [SproFiler](https://sprofiler.io). For instructions on how to register and use SproFiler join the [Gaggiuino Discord](https://discord.com/channels/890339612441063494/1289578499581149204).
+- **WiFi:** Connect your Gaggiuino to a local WiFi network. If Gaggiuino is connected to the Internet, it will retrieve the current date and time. If Gaggiuino is not connected to a network, it acts as a WiFi access point named: *Gaggiuino AP*. The password is the network name with a zero substituted for the "o" and the space removed.
 
 ## Display
 
@@ -147,13 +153,13 @@ The recorded shot graphs are shown in a list. The shots are shown with a serial 
 <img alt="Settings embedded" src="manual-gen3/web/003_003_settings_display.png">
 <!-- tabs:end -->
 
-- **Brightness:** Adjust the brightness of the LCD screen
+- **Brightness:** Adjust the brightness of the LCD screen.
 - **LCD Sleep [min]:** Set a time after which the display goes into sleep mode. Wake up the screen by tapping it.
 
 ### Theme and Accents
-- **Dark mode:** Enable a dark color scheme for the UI
-- **Theme:** Choose a color scheme for the UI
-- **Accent:** Choose an accent color for the UI
+- **Dark mode:** Enable a dark color scheme for the UI.
+- **Theme:** Choose a color scheme for the UI.
+- **Accent:** Choose an accent color for the UI.
 
 ## Scales
 

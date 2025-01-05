@@ -36,26 +36,47 @@
 - **Weight:** If hardware scales are installed or Bluetooth scales connected, the current weight of the scales is shown in grams. The scales can be tared by tapping the current weight field. (Note: the scales tare automatically, when a shot is started.)
 - **Flush:** Tap the flush button to activate flush mode. The grey circle inside the button will light up green. Flushing can now be activated with the **brew** switch. Tap the flush button again to deactivate flush mode.
 Tap and hold the button to perform a 5s flush. The grey circle will light up blue. The flush can be stopped by tapping the button again.
-- **Back flushing:** 
-    1. Insert a blind basket into the portafilter.
-    2. *OPTIONAL* Remove shower screen and add Cafiza to blind basket.
-    3. Lock the portafilter into the group head. 
-    4. Activate flush mode by tapping the flush button and press the **brew** switch. 
-    5. Let the machine perform multiple cycles.
-    6. Turn off the **brew** switch. Tap on the flush buttom to deactivateflush mode.
-- **Descaling:** 
-    1. Empty the drip tray.
-    2. Fill the water tank up to the 'max' line with descale solution (citric acid is recommended). 
-    3. Lock a portafilter with a blind basket into the group head. 
-    4. Place a sufficiently big container under the steam wand. 
-    5. Open the steam wand a quarter turn. 
-    6. Activate the descale mode by tapping the descale button (the circle inside will turn green). Press the **brew** switch. The machine will run through the descale cycle until the tank is empty. This will take around 30 minutes. 
-    7. When the tank is empty, turn off the **brew** switch. Take out the tank, clean it and fill it with water to the 'max' line to rinse the machine. 
-    8. Start the descale cycle again by pressing the **brew** switch.
-    9. Wait until the tank is empty. The descaling was successful.
 
+## Cleaning 
+
+### Back flushing
+
+1. Insert a blind basket into the portafilter.
+2. *OPTIONAL* Remove shower screen and add Cafiza to blind basket.
+3. Lock the portafilter into the group head. 
+4. Activate flush mode by tapping the flush button and press the **brew** switch. 
+5. Let the machine perform multiple cycles.
+6. Turn off the **brew** switch. Tap on the flush buttom to deactivateflush mode.
+
+### Descaling
+
+1. Empty the drip tray.
+2. Fill the water tank up to the 'max' line with descale solution (i.e. water and citric acid). 
+3. Lock a portafilter with a blind basket into the group head. 
+4. Place a sufficiently big container under the steam wand (2l). 
+5. Open the steam wand a quarter turn. 
+6. Activate the descale mode by tapping the descale button (the circle inside will turn green). Press the **brew** switch. The machine will run through the descale cycle until the tank is empty. This will take around 30 minutes. 
+7. When the tank is empty, turn off the **brew** switch. Take out the tank, clean it and fill it with clean fresh water to the 'max' line to rinse the machine. 
+8. Start the descale cycle again by pressing the **brew** switch.
+9. Wait until the tank is empty. 
+10. The descaling was successful.
 
 If the TofnLED board is installed, the descale cycle will stop automatically when the tank is empty.
+
+<!-- tabs:start -->
+<!-- tab:Embedded UI -->
+<img alt="Descaling embedded" src="manual-gen3/mbed/001_004_descale.png">
+
+- **Pause:** Pause the descaling.
+<!-- tab:Web UI -->
+<img alt="Shot in progress web" src="manual-gen3/web/001_004_descaling.png">
+
+- **Elapsed time:** Shows for how long descaling has been active.
+<!-- tabs:end -->
+
+- **Descaling phase:** Shows the current descaling phase. During descaling the machine will cycle multiple times thorugh all descaling phases.
+- **Progress bar:** The progress of the descaling.
+- **Close:** Close the descale progress view. (The descaling will continue.)
 
 ## Shot in progress
 
